@@ -27,3 +27,66 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* SOLUTION */
+
+.header {
+  display: flex;
+  size: 32px;
+  font-weight: 900;
+  align-items: center;
+  padding-left: 16px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* unneded */
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  /* min-width: 300px; */
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+.cards {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.card {
+  padding: 16px;
+  width: 300px;
+  margin: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  size: 24px;
+}
+
+ul {
+  list-style: none;
+  /* don't forget to reset margin and padding for ul */
+  margin: 0;
+  padding: 0;
+}
+
+/* for spacing !!!! */
+li {
+  margin-bottom: 16px;
+}
